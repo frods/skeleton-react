@@ -1,0 +1,16 @@
+{
+  "name": "recipe-finder",
+  "version": "1.0.0",
+  "description": "Tool for finding and following the best recipes on the web.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js.babel-core/register --recursive ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/pcavaco/recipe-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/pcavaco/recipe-site#readme"
+}
