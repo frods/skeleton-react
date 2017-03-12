@@ -11,7 +11,8 @@ const commonConfig = {
     entry: PATHS.site,
     output: {
         filename: "[name].js",
-        path: PATHS.dist
+        path: PATHS.dist,
+        publicPath: PATHS.dist
     },
 
     plugins: [
@@ -43,9 +44,13 @@ const commonConfig = {
                 loader: "source-map-loader",
             },
             {
+                test: /\.css$/,
+                loaders: ['style-loader', 'css-loader'],
+            },
+            {
                 test: /\.tsx?$/,
                 loaders: ['awesome-typescript-loader'],
-            }
+            },
         ]
     },
 
